@@ -1,0 +1,141 @@
+/* Write some CSS below */
+body {
+  font-family: Overpass;
+  color: #404042;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  font-family: Chivo;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+
+.container {
+	width: 800px;
+	margin: auto
+}
+
+.banner {
+  background-image: url('images/background.jpg');
+  background-position: center;
+  color: rgb(230, 230, 230);
+  padding: 150px 0px;
+  text-align: center;
+}
+
+.banner h1 {
+	color: white;
+	font-size: 45px
+}
+
+.banner p {
+	color: rgb(200,200,200);
+	font-size: 24px
+}
+
+.button-blue {
+	background-color: #1A48E3;
+	padding: 16px 48px;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.button-blue:hover {
+	background-color: #0D1EC6
+}
+
+.card-white {
+	background-color: white;
+	border-radius: 4px;
+	padding: 24px;
+	margin: 8px 8px 50px 8px;
+	box-shadow: 0px 0px 16px rgba(0,0,0,0.1);
+	width: 700px;
+}
+
+
+.footer {
+	background-color: rgb(60,60,60);
+	color: white;
+	text-align: center;
+	padding: 24px
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table td:first-child {
+  font-weight: bold
+}
